@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1075060143632",
+    "firebase_url": "https://logic-design-1f0d7.firebaseio.com",
+    "project_id": "logic-design-1f0d7",
+    "storage_bucket": "logic-design-1f0d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1075060143632:android:28d9ebd503d243c1",
+        "android_client_info": {
+          "package_name": "com.app_tarek.logicdesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1075060143632-76hg67tvvufphfvib8sfvia57h521p68.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBnBJ7TaBNbJQi9vOcxJPa_Mo4jqHXxMpQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

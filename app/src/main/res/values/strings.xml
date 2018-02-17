@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Logic Design</string>
+    <string name="decimal">Decimal</string>
+    <string name="binary">Binary System</string>
+    <string name="octal">Octal System</string>
+    <string name="Hex">Hexadecimal</string>
+    <string-array name="system">
+        <item>@string/decimal</item>
+        <item>@string/binary</item>
+        <item>@string/octal</item>
+        <item>@string/Hex</item>
+    </string-array>
+</resources>
