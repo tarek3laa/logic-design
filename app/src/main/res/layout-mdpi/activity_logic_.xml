@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,8 +19,8 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_weight="2"
+                android:layout_marginTop="30dp"
+                android:layout_weight="5"
                 android:id="@+id/spinner1"
 
                 android:entries="@array/system"></Spinner>
@@ -29,10 +28,11 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_weight="2"
+                android:layout_marginTop="40dp"
+                android:layout_weight="4"
                 android:hint="Enter The Value"
                 android:textColor="#a5cbdd"
+                android:textSize="50sp"
                 android:id="@+id/edit_text"
                 />
 
@@ -40,14 +40,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
-                android:layout_marginBottom="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_weight="2"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_weight="4"
                 android:fontFamily="serif-monospace"
                 android:text="TO"
                 android:textAlignment="center"
                 android:textColor="#2979ff"
-                android:textSize="30sp"
+                android:textSize="50sp"
                 android:textStyle="bold"
                 android:id="@+id/text_to"
                 />
@@ -55,23 +55,22 @@
             <Spinner
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_weight="2"
+                android:layout_marginTop="30dp"
+                android:layout_weight="5"
                 android:entries="@array/system"
                 android:id="@+id/spinner2"
-
                 ></Spinner>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_weight="2"
+                android:layout_marginTop="40dp"
+                android:layout_weight="3"
                 android:fontFamily="serif-monospace"
                 android:text="0"
                 android:textAlignment="center"
                 android:textColor="#a5cbdd"
-                android:textSize="30sp"
+                android:textSize="50sp"
                 android:textStyle="bold"
                 android:id="@+id/text_val"
 
@@ -81,30 +80,32 @@
                 style="@style/Widget.AppCompat.Button.Colored"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="50dp"
                 android:fontFamily="serif-monospace"
                 android:text="Enter"
                 android:textAlignment="center"
                 android:textColor="#e0f7fa"
-                android:textSize="30sp"
+                android:textSize="50sp"
                 android:textStyle="bold"
                 android:typeface="normal"
                 android:id="@+id/button"
 
                 />
 
+
         </LinearLayout>
 
 
     </ScrollView>
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
         android:id="@+id/adView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         ads:adSize="SMART_BANNER"
+        android:layout_marginTop="30dp"
         ads:adUnitId="ca-app-pub-4645956600658698~8768713097">
+
     </com.google.android.gms.ads.AdView>
 </RelativeLayout>

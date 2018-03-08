@@ -1,96 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<!--suppress ALL -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.app_tarek.logicdesign.Logic_Activity">
-
-    <LinearLayout
+    tools:context="com.app_tarek.logicdesign.Logic_Activity"
+    android:background="#3e4376"
+    >
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <Spinner
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="3"
-            android:id="@+id/spinner1"
-            android:entries="@array/system"></Spinner>
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_weight="2"
-            android:hint="Enter The Value"
-            android:textColor="#455a64"
-            android:id="@+id/edit_text"
-            />
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="3"
+                android:entries="@array/system"
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:layout_marginBottom="20dp"
-            android:layout_marginTop="20dp"
-            android:layout_weight="1"
-            android:fontFamily="serif-monospace"
-            android:text="TO"
-            android:textAlignment="center"
-            android:textColor="#2979ff"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:id="@+id/text_to"            />
+                ></Spinner>
 
-        <Spinner
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_weight="3"
-            android:entries="@array/system"
-            android:id="@+id/spinner2"
-            ></Spinner>
+            <EditText
+                android:id="@+id/edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="2"
+                android:hint="Enter The Value"
+                android:textColor="#a5cbdd" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:layout_weight="2"
-            android:fontFamily="serif-monospace"
-            android:text="#000000"
-            android:textAlignment="center"
-            android:textColor="#263238"
-            android:textSize="30sp"
-            android:textStyle="bold"
-            android:id="@+id/text_val"
-            />
+            <TextView
+                android:id="@+id/text_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_weight="1"
+                android:fontFamily="serif-monospace"
+                android:text="TO"
+                android:textAlignment="center"
+                android:textColor="#2979ff"
+                android:textSize="30sp"
+                android:textStyle="bold" />
 
-        <Button
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:fontFamily="serif-monospace"
-            android:text="Enter"
-            android:textAlignment="center"
-            android:textColor="#e0f7fa"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:id="@+id/button"
-            android:typeface="normal" />
-        <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/adView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            ads:adSize="SMART_BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
-        </com.google.android.gms.ads.AdView>
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_weight="3"
+                android:entries="@array/system"
 
-    </LinearLayout>
+                ></Spinner>
+
+            <TextView
+                android:id="@+id/text_val"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_weight="2"
+                android:fontFamily="serif-monospace"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="#a5cbdd"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="serif-monospace"
+                android:text="Enter"
+                android:textAlignment="center"
+                android:textColor="#e0f7fa"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
 
 
-</ScrollView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-4645956600658698~8768713097"></com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
