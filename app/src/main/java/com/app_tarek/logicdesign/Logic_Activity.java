@@ -33,8 +33,7 @@ import static java.lang.Long.parseLong;
 public class Logic_Activity extends AppCompatActivity {
 
     private AdView mAdView;
-//********************************
-
+//*******************************
     Spinner spinner1;
     Spinner spinner2;
 
@@ -77,16 +76,32 @@ public class Logic_Activity extends AppCompatActivity {
                 try {
                     val1 = spinner1.getSelectedItem().toString();
                     val2 = spinner2.getSelectedItem().toString();
+                    if (val1.equals(getString(R.string.Hex))) {
 
-                    String a = editText.getText().toString();
-                    long num = parseLong(a);
-                    check(num, val1, val2, editText.getText().toString());
+                        conversionFromHex hex = new conversionFromHex(editText.getText().toString());
+                        if (val2.equals(getString(R.string.decimal))) {
 
+                            setVal += hex.toDecimal();
+
+                        } else if (val2.equals(getString(R.string.binary))) {
+                            setVal += hex.toBinary();
+
+                        } else if (val2.equals(getString(R.string.octal))) {
+                            setVal += hex.toOctal();
+
+                        }
+                    }
+                    else {
+                        String a = editText.getText().toString();
+                        long num = parseLong(a);
+                        check(num, val1, val2, editText.getText().toString());
+                    }
                     textView.setText(setVal);
                     arrayList.clear();
                     setVal = " ";
-                } catch (Exception e) {
-                    Toast.makeText(Logic_Activity.this, "Error", Toast.LENGTH_LONG).show();
+                 }
+                catch (Exception e) {
+                    Toast.makeText(Logic_Activity.this, "Error ", Toast.LENGTH_LONG).show();
 
                 }
             }
@@ -137,20 +152,6 @@ public class Logic_Activity extends AppCompatActivity {
             }
 
 
-        } else if (val1.equals(getString(R.string.Hex))) {
-
-            conversionFromHex hex = new conversionFromHex(editText);
-            if (val2.equals(getString(R.string.decimal))) {
-
-                this.setVal += hex.toDecimal();
-
-            } else if (val2.equals(getString(R.string.binary))) {
-                this.setVal += hex.toBinary();
-
-            } else if (val2.equals(getString(R.string.octal))) {
-                this.setVal += hex.toOctal();
-
-            }
         }
 
 

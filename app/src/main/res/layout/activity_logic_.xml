@@ -49,7 +49,9 @@
                 android:textAlignment="center"
                 android:textColor="#2979ff"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+
+                />
 
             <Spinner
                 android:id="@+id/spinner2"
@@ -90,6 +92,7 @@
 
 
 
+
         </LinearLayout>
 
 
@@ -101,6 +104,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         ads:adSize="SMART_BANNER"
-        ads:adUnitId="ca-app-pub-4645956600658698~8768713097"></com.google.android.gms.ads.AdView>
+        ads:adUnitId="ca-app-pub-3940256099942544~3347511713"></com.google.android.gms.ads.AdView>
 
 </RelativeLayout>

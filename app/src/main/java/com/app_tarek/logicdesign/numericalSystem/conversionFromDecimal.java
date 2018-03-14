@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public class conversionFromDecimal {
     private long num;
     private String editText;
-    //  ArrayList<Long> arrayList=new ArrayList<long>();
+
     ArrayList<Integer>arrayList=new ArrayList<Integer>();
     public conversionFromDecimal(long num, String editText) {
         this.num = num;
@@ -71,7 +71,7 @@ public class conversionFromDecimal {
         x = (d - r) * 16.0;
         p = (int) x;
         arrayList.add(p);
-        for (int i = 1; i < editText.length() - 1; i++) {
+        for (int i = 0; i < editText.length() - 1; i++) {
             d = r;
             d /= 16.0;
             r = (int) d;
